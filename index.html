@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHANNEL 2K26 | National Level Symposium</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description"
+    content="CHANNEL 2K26 - National Level Symposium organized by the Department of Electronics and Communication Engineering, Adhiparasakthi Engineering College, Melmaruvathur. March 25, 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <h2 class="loader-text">CHANNEL 2K26</h2>
+      <p class="loader-sub">Loading Experience...</p>
+    </div>
+  </div>
+
+  <!-- ========== PARTICLE CANVAS ========== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">⚡</span> CHANNEL <span class="logo-accent">2K26</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#guest">Chief Guest</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#register" class="nav-btn">Register Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <p class="hero-badge">🚀 National Level Symposium</p>
+      <h1 class="hero-title glitch" data-text="CHANNEL 2K26">CHANNEL 2K26</h1>
+      <p class="hero-tagline">Innovate. Connect. Transform.</p>
+
+      <div class="hero-info">
+        <div class="hero-info-item">
+          <i class="fas fa-calendar-alt"></i>
+          <span>25 March 2026</span>
+        </div>
+        <div class="hero-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Adhiparasakthi Engineering College, Melmaruvathur</span>
+        </div>
+        <div class="hero-info-item">
+          <i class="fas fa-building"></i>
+          <span>Dept. of ECE</span>
+        </div>
+      </div>
+
+      <!-- Countdown Timer -->
+      <div class="countdown" id="countdown">
+        <div class="countdown-item">
+          <span id="days" class="countdown-value">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-item">
+          <span id="hours" class="countdown-value">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes" class="countdown-value">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds" class="countdown-value">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#register" class="btn btn-primary">
+          <i class="fas fa-user-plus"></i> Register Now
+        </a>
+        <a href="#events" class="btn btn-secondary">
+          <i class="fas fa-rocket"></i> Explore Events
+        </a>
+      </div>
+
+      <!-- Convener & Secretary -->
+      <div class="hero-officials">
+        <div class="official-card">
+          <div class="official-role">Convener</div>
+          <div class="official-name">Mr. B. Elango</div>
+        </div>
+        <div class="official-card">
+          <div class="official-role">Student Coordinator</div>
+          <div class="official-name">S. Mounish Kumar</div>
+          <div class="official-phone"><i class="fas fa-phone"></i> +91 9342620698</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ========== CHIEF GUEST ========== -->
+  <section id="guest" class="section">
+    <div class="container">
+      <div class="guest-header" data-reveal>
+        <span class="guest-badge">HONORING OUR DISTINGUISHED GUEST</span>
+        <h2 class="section-title">Chief <span class="accent guest-accent">Guest</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="guest-card glass-card" data-reveal>
+        <div class="guest-image">
+          <img src="chief gust.jpeg" alt="Dr. Sathyaprakash Palaniyappan">
+        </div>
+        <div class="guest-content">
+          <span class="role-badge"><i class="fas fa-star"></i> CHIEF GUEST</span>
+          <h3>Dr. Sathyaprakash Palaniyappan</h3>
+          <p class="guest-subtitle">
+            <span class="highlight">Chief Operating Officer</span><br>
+            Anuthantra Private Limited, Bengaluru
+          </p>
+
+          <div class="guest-details-box glass-card">
+            <div class="company-logo">
+               <i class="fas fa-microchip"></i>
+            </div>
+            <div class="company-info">
+              <h4>Anuthantra Private Limited</h4>
+              <p>Top Corporate</p>
+            </div>
+          </div>
+
+          <div class="guest-expertise-box glass-card">
+            <div class="expertise-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <div class="expertise-info">
+              <span class="label">EXPERTISE</span>
+              <p>IBM Quantum Educator</p>
+            </div>
+          </div>
+
+          <a href="https://www.linkedin.com/in/dr-sathyaprakash-palaniyappan-44802019?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="btn btn-primary linkedin-btn">
+            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT DEPARTMENT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title" data-reveal>About the <span class="accent">Department</span></h2>
+      <p class="section-subtitle" data-reveal>Electronics and Communication Engineering</p>
+
+      <div class="about-grid">
+        <div class="about-text" data-reveal>
+          <p>The Department of Electronics and Communication Engineering at Adhiparasakthi Engineering
+            College has been a beacon of excellence in technical education since its inception. With state-of-the-art
+            laboratories, a distinguished faculty, and a legacy of innovative research, we empower students to become
+            the engineers who shape tomorrow's world.</p>
+          <p>Our curriculum blends cutting-edge theory with hands-on practice in areas including VLSI design, embedded
+            systems, signal processing, power electronics, and modern communication systems.</p>
+        </div>
+        <div class="about-cards" data-reveal>
+          <div class="glass-card about-card">
+            <div class="card-icon"><i class="fas fa-eye"></i></div>
+            <h3>Our Vision</h3>
+            <p>To be a globally recognized center of excellence in Electronics and Communication Engineering,
+              fostering innovation, ethical values, and impactful research.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+            <h3>Our Mission</h3>
+            <p>To provide quality education, promote entrepreneurial thinking, develop industry-ready graduates, and
+              contribute to society through technological advancements.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="card-icon"><i class="fas fa-trophy"></i></div>
+            <h3>Achievements</h3>
+            <p>Our students have consistently excelled in national competitions, published in renowned journals, and
+              secured placements in top multinational companies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== EVENTS ========== -->
+  <section id="events" class="section">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Our <span class="accent">Events</span></h2>
+      <p class="section-subtitle" data-reveal>Choose your arena — compete, create, and conquer</p>
+
+      <!-- Technical Events -->
+      <div class="events-category" data-reveal>
+        <h3 class="category-title"><i class="fas fa-microchip"></i> Technical Events</h3>
+        <div class="events-grid">
+          <div class="glass-card event-card" onclick="openEventModal('paper')" id="event-paper">
+            <div class="event-icon"><i class="fas fa-file-alt"></i></div>
+            <h4>Paper Presentation</h4>
+            <p>Showcase your research and innovative ideas on the grand stage.</p>
+            <span class="event-badge">Technical</span>
+            <div class="event-card-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+          <div class="glass-card event-card" onclick="openEventModal('quiz')" id="event-quiz">
+            <div class="event-icon"><i class="fas fa-brain"></i></div>
+            <h4>Technical Quiz</h4>
+            <p>Test your knowledge across electronics, circuits, and emerging tech.</p>
+            <span class="event-badge">Technical</span>
+            <div class="event-card-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+          <div class="glass-card event-card" onclick="openEventModal('circuitdebug')" id="event-circuitdebug">
+            <div class="event-icon"><i class="fas fa-tools"></i></div>
+            <h4>Circuit/Code Debugging</h4>
+            <p>Find and fix flaws in complex electronic circuits against the clock.</p>
+            <span class="event-badge">Technical</span>
+            <div class="event-card-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Non-Technical Events -->
+      <div class="events-category" data-reveal>
+        <h3 class="category-title"><i class="fas fa-palette"></i> Non-Technical Events</h3>
+        <div class="events-grid">
+          <div class="glass-card event-card" onclick="openEventModal('connections')" id="event-connections">
+            <div class="event-icon"><i class="fas fa-puzzle-piece"></i></div>
+            <h4>Connections</h4>
+            <p>Connect the visual clues to guess the right answer. A perfect test for your lateral thinking!</p>
+            <span class="event-badge non-tech">Non-Technical</span>
+            <div class="event-card-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+          <div class="glass-card event-card" onclick="openEventModal('nontechquiz')" id="event-nontechquiz">
+            <div class="event-icon"><i class="fas fa-question-circle"></i></div>
+            <h4>Non-Technical Quiz</h4>
+            <p>A fun-filled quiz testing your general knowledge, movies, sports, and pop culture.</p>
+            <span class="event-badge non-tech">Non-Technical</span>
+            <div class="event-card-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EVENT MODAL ========== -->
+  <div id="eventModal" class="modal-overlay" onclick="closeModalOutside(event)">
+    <div class="modal-content glass-card">
+      <button class="modal-close" onclick="closeEventModal()" aria-label="Close modal">&times;</button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <h2 id="modalTitle" class="modal-title"></h2>
+      <span id="modalBadge" class="event-badge modal-badge"></span>
+      <p id="modalDescription" class="modal-description"></p>
+      <div class="modal-details">
+        <div class="modal-detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span><strong>Venue:</strong> APEC Library</span>
+        </div>
+        <div class="modal-detail-item">
+          <i class="fas fa-indian-rupee-sign"></i>
+          <span><strong>Registration Fee:</strong> <span id="modalFee"></span></span>
+        </div>
+      </div>
+      <div class="modal-cert">
+        <i class="fas fa-certificate"></i> Certificates will be provided to all participants
+      </div>
+      <a href="paper-rules.html" target="_blank" class="btn btn-secondary modal-rules-btn" id="modalRulesBtn" style="display: none; width: 100%; justify-content: center; margin-bottom: 10px;">
+        <i class="fas fa-book-open"></i> Conditions/rules for Paper Presentation
+      </a>
+      <a href="paper-themes.html" target="_blank" class="btn btn-secondary modal-themes-btn" id="modalThemesBtn" style="display: none; width: 100%; justify-content: center; margin-bottom: 15px;">
+        <i class="fas fa-list"></i> Themes
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzfsX9piEjzStLXYPApE0Ah_ENW8Fodf111CYCQuf_XEUpxQ/viewform?usp=publish-editor" target="_blank" class="btn btn-primary modal-register-btn"
+        id="modalRegisterBtn">
+        <i class="fas fa-user-plus"></i> Register Now
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== EVENT GUIDELINES & INVITATION ========== -->
+  <section id="guidelines" class="section">
+    <div class="container">
+      <div class="guest-header" data-reveal>
+        <span class="guest-badge">EVENT GUIDELINES</span>
+        <h2 class="section-title">Invitation <span class="accent guest-accent">Card</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="invitation-card glass-card" data-reveal>
+        <div class="invitation-header">
+           <div class="invitation-logo">
+             <i class="fas fa-shield-alt"></i>
+           </div>
+           <div class="invitation-title">Official Invitation Card</div>
+           <div class="invitation-date">
+             <span class="date-day">25</span>
+             <span class="date-month">MAR</span>
+             <span class="date-year">2026</span>
+           </div>
+        </div>
+        
+        <div class="invitation-body">
+          <div class="rules-box dos">
+             <h3 class="rules-title dos-title"><i class="fas fa-check-square"></i> Do's</h3>
+             <ul class="rules-list">
+               <li>Carry valid College ID card</li>
+               <li>Arrive 30 mins before events</li>
+               <li>Follow dress code (Formal)</li>
+               <li>Maintain decorum</li>
+               <li>Respect coordinators & judges</li>
+             </ul>
+          </div>
+          <div class="rules-box donts">
+             <h3 class="rules-title donts-title"><i class="fas fa-times" style="color: #ff4d4f;"></i> Don'ts</h3>
+             <ul class="rules-list">
+               <li>No unfair means or plagiarism</li>
+               <li>No entry without registration</li>
+               <li>No disruption during events</li>
+               <li>No arguments with judges</li>
+               <li>No damage to property</li>
+             </ul>
+          </div>
+        </div>
+
+        <div class="invitation-footer">
+          <div class="invitation-location">
+            <i class="fas fa-map-pin" style="color: #ff4f6f;"></i> Adhiparasakthi Engineering College, Melmaruvathur
+          </div>
+          <a href="invitation.png" download class="invitation-download-btn">
+             <i class="fas fa-book-open"></i> Download Invitation <span class="format-badge">PNG</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TIMELINE ========== -->
+  <section id="timeline" class="section">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Event <span class="accent">Timeline</span></h2>
+      <p class="section-subtitle" data-reveal>25 March 2026 — Here's how the day unfolds</p>
+
+      <div class="timeline">
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-time">09:00 AM</div>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-icon"><i class="fas fa-clipboard-check"></i></div>
+            <h4>Registration</h4>
+            <p>Check-in, collect your event kit, and get ready for an incredible day.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-time">09:30 AM</div>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-icon"><i class="fas fa-flag"></i></div>
+            <h4>Inauguration</h4>
+            <p>Grand opening ceremony with the chief guest and faculty address.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-time">10:00 AM</div>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+            <h4>Technical Events Begin</h4>
+            <p>Paper Presentation, Technical Quiz, and Circuit/Code Debugging kick off simultaneously.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-time">12:30 PM</div>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-icon"><i class="fas fa-utensils"></i></div>
+            <h4>Lunch Break</h4>
+            <p>Refuel with delicious meals and network with fellow participants.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-time">01:30 PM</div>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-icon"><i class="fas fa-gamepad"></i></div>
+            <h4>Non-Technical Events</h4>
+            <p>Connections and Non-Technical Quiz competitions begin.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-time">03:30 PM</div>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-icon"><i class="fas fa-award"></i></div>
+            <h4>Valedictory Ceremony</h4>
+            <p>Winners announced, prize distribution, and closing remarks.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-time">04:00 PM</div>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-icon"><i class="fas fa-hand-peace"></i></div>
+            <h4>Event Ends</h4>
+            <p>Thank you for being part of CHANNEL 2K26! See you next year.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Get in <span class="accent">Touch</span></h2>
+      <p class="section-subtitle" data-reveal>We'd love to hear from you</p>
+
+      <div class="contact-grid" data-reveal>
+        <div class="contact-info">
+          <div class="glass-card contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h4>Address</h4>
+            <p>Adhiparasakthi Engineering College,<br>Melmaruvathur - 603319,<br>Chengalpattu District, Tamil Nadu</p>
+          </div>
+          <div class="glass-card contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <h4>Email</h4>
+            <p>events.ece.apec@gmail.com</p>
+          </div>
+          <div class="glass-card contact-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <h4>Phone</h4>
+            <p>Mr. B. Elango<br>S. Mounish Kumar: +91 9342620698</p>
+          </div>
+        </div>
+        <div class="contact-map glass-card">
+          <iframe
+            src="https://maps.google.com/maps?q=12.436921,79.821985&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Adhiparasakthi Engineering College Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REGISTER CTA ========== -->
+  <section id="register" class="section register-section">
+    <div class="container">
+      <div class="register-cta" data-reveal>
+        <h2>Ready to be part of <span class="accent">CHANNEL 2K26</span>?</h2>
+        <p>Don't miss out on this incredible experience. Register now and secure your spot!</p>
+        <div class="register-features">
+          <div class="register-feature"><i class="fas fa-certificate"></i> Certificates for all</div>
+          <div class="register-feature"><i class="fas fa-trophy"></i> Exciting prizes</div>
+          <div class="register-feature"><i class="fas fa-utensils"></i> Refreshments included</div>
+          <div class="register-feature"><i class="fas fa-users"></i> Network with peers</div>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzfsX9piEjzStLXYPApE0Ah_ENW8Fodf111CYCQuf_XEUpxQ/viewform?usp=publish-editor" target="_blank" class="btn btn-primary btn-large">
+          <i class="fas fa-user-plus"></i> Register Now — It's Quick!
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><span class="logo-icon">⚡</span> CHANNEL <span class="accent">2K26</span></h3>
+          <p>National Level Symposium organized by the Department of Electrical and Electronics Communication
+            Engineering, Adhiparasakthi Engineering College, Melmaruvathur.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#guest">Chief Guest</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#guidelines">Guidelines</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="https://instagram.com/apec1984" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/school/adhiparasakthi-engineering-college/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://youtube.com/@apec1984?si=1TilGqjEQjwXaAqD" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CHANNEL 2K26 — Adhiparasakthi Engineering College. All rights reserved.</p>
+        <p>Designed with <i class="fas fa-heart" style="color: #ff4f6f;"></i> by the ECE Department</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

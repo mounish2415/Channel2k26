@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Presentation - Themes | CHANNEL 2K26</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      padding-top: 100px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .rules-container {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+      flex: 1;
+    }
+    .rules-card {
+      padding: 40px;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+    .rules-title {
+      font-family: var(--font-orbitron);
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+    .rule-section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+    }
+    .rule-section:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .rule-list {
+      list-style-type: none;
+    }
+    .rule-list li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 12px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    .rule-list li::before {
+      content: '•';
+      color: var(--accent);
+      position: absolute;
+      left: 5px;
+      top: 0;
+      font-size: 1.2rem;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-family: var(--font-orbitron);
+      margin-bottom: 20px;
+      transition: color 0.3s;
+    }
+    .back-btn:hover {
+      color: var(--accent);
+    }
+    @media (max-width: 768px) {
+      .rules-card {
+        padding: 25px;
+      }
+      .rules-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">⚡</span> CHANNEL <span class="logo-accent">2K26</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Back to Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== THEMES CONTENT ========== -->
+  <div class="rules-container slide-up">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Event Details</a>
+    
+    <div class="glass-card rules-card">
+      <h1 class="rules-title"><i class="fas fa-lightbulb"></i> Paper Presentation – Themes</h1>
+      
+      <div class="rule-section">
+        <ul class="rule-list">
+          <li>Agriculture</li>
+          <li>Healthcare</li>
+          <li>Industry 4.0</li>
+          <li>Consumer Electronics</li>
+          <li>Real-World Problems</li>
+        </ul>
+      </div>
+
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="paper-statements.html" class="btn btn-primary">
+          <i class="fas fa-microchip"></i> OUR PROBLEM STATEMENT
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container" style="text-align: center; padding: 20px 0;">
+      <div class="footer-bottom">
+        <p>&copy; 2026 CHANNEL 2K26 — Adhiparasakthi Engineering College. All rights reserved.</p>
+        <p>Designed with <i class="fas fa-heart" style="color: #ff4f6f;"></i> by the ECE Department</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

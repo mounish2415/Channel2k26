@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Presentation - Rules | CHANNEL 2K26</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      padding-top: 100px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .rules-container {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+      flex: 1;
+    }
+    .rules-card {
+      padding: 40px;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+    .rules-title {
+      font-family: var(--font-orbitron);
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+    .rule-section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .rule-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .rule-section h3 {
+      font-family: var(--font-orbitron);
+      color: #fff;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .rule-section h3 i {
+      color: var(--accent);
+    }
+    .rule-list {
+      list-style-type: none;
+    }
+    .rule-list li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 12px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .rule-list li::before {
+      content: '•';
+      color: var(--accent);
+      position: absolute;
+      left: 5px;
+      top: 0;
+      font-size: 1.2rem;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-family: var(--font-orbitron);
+      margin-bottom: 20px;
+      transition: color 0.3s;
+    }
+    .back-btn:hover {
+      color: var(--accent);
+    }
+    @media (max-width: 768px) {
+      .rules-card {
+        padding: 25px;
+      }
+      .rules-title {
+        font-size: 1.5rem;
+      }
+      .rule-section h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">⚡</span> CHANNEL <span class="logo-accent">2K26</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Back to Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== RULES CONTENT ========== -->
+  <div class="rules-container slide-up">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Event Details</a>
+    
+    <div class="glass-card rules-card">
+      <h1 class="rules-title">📄 Paper Presentation – Rules & Conditions</h1>
+      
+      <div class="rule-section">
+        <h3><i class="fas fa-users"></i> Participation</h3>
+        <ul class="rule-list">
+          <li>Participants can join individually or in a team (max 4 members)</li>
+          <li>Only one paper per team is allowed</li>
+        </ul>
+      </div>
+
+      <div class="rule-section">
+        <h3><i class="fas fa-edit"></i> Submission Rules</h3>
+        <ul class="rule-list">
+          <li>Paper must be original and not copied</li>
+          <li>Abstract submission is mandatory before full paper</li>
+          <li>File format: PDF / Word</li>
+          <li>Follow proper format (title, abstract, content, conclusion, references)</li>
+        </ul>
+      </div>
+
+      <div class="rule-section">
+        <h3><i class="fas fa-stopwatch"></i> Presentation Rules</h3>
+        <ul class="rule-list">
+          <li>Each team gets 5–7 minutes for presentation</li>
+          <li>2–3 minutes for Q&A session</li>
+          <li>Exceeding time limit may lead to negative marking</li>
+        </ul>
+      </div>
+
+      <div class="rule-section">
+        <h3><i class="fas fa-laptop"></i> Presentation Requirements</h3>
+        <ul class="rule-list">
+          <li>PPT is mandatory</li>
+          <li>Bring your presentation in pen drive + backup (email/phone)</li>
+          <li>Use clear slides with minimal text and visuals</li>
+        </ul>
+      </div>
+
+      <div class="rule-section">
+        <h3><i class="fas fa-balance-scale"></i> Judging Criteria</h3>
+        <ul class="rule-list">
+          <li>Innovation & originality</li>
+          <li>Technical/content knowledge</li>
+          <li>Presentation skills</li>
+          <li>Clarity and confidence</li>
+          <li>Response to questions</li>
+        </ul>
+      </div>
+
+      <div class="rule-section">
+        <h3><i class="fas fa-exclamation-triangle"></i> General Conditions</h3>
+        <ul class="rule-list">
+          <li>Plagiarism is strictly prohibited</li>
+          <li>Any form of misconduct leads to disqualification</li>
+          <li>Participants must report 30 minutes before the event</li>
+          <li>Bring college ID card</li>
+        </ul>
+      </div>
+
+      <div class="rule-section">
+        <h3><i class="fas fa-trophy"></i> Results & Certificates</h3>
+        <ul class="rule-list">
+          <li>Judges' decision will be final and binding</li>
+          <li>Certificates will be provided for all participants</li>
+          <li>Prizes for winners and runners</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container" style="text-align: center; padding: 20px 0;">
+      <div class="footer-bottom">
+        <p>&copy; 2026 CHANNEL 2K26 — Adhiparasakthi Engineering College. All rights reserved.</p>
+        <p>Designed with <i class="fas fa-heart" style="color: #ff4f6f;"></i> by the ECE Department</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
